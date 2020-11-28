@@ -1,0 +1,24 @@
+.container {
+    width: 350px;
+    height: 3050px;
+    border: 1px solid rgb(21, 0, 255);
+    /*position: static absolute relative fixed sticky;*/
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: aquamarine;
+    border: 1px solid;
+}
+
+.bloc {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 1px solid red;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}

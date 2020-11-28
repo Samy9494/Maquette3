@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> contact </title>
+    <style>
+        a:link {
+            color: red;
+        }
+        
+        a:visited {
+            color: rgb(10, 199, 45);
+        }
+        
+        a:active {
+            color: rgb(0, 242, 255);
+        }
+        
+        a:hover {
+            color: black;
+        }
+        
+        header:hover {}
+        
+        .section__p p {
+            margin-left: 50px;
+        }
+        
+        .section__p p:first-child {
+            color: rgb(32, 10, 199);
+            font-size: 25px;
+        }
+        
+        .section__p p:nth-child(3) {
+            color: rgb(32, 10, 199);
+            font-size: 25px;
+        }
+        
+        .section__p p:last-child {
+            color: rgb(32, 10, 199);
+            font-size: 25px;
+        }
+        
+        .section__p p::after {
+            content: " *";
+        }
+        
+        .section__p p::before {
+            content: "   ";
+        }
+    </style>
+</head>
+
+<body>
+
+    <header style="width: 100%; height: 200px;">
+        <nav>
+            <a href="index.html" title="Page accueil"> Accueil </a>
+            <a href="service.html" title="Page service"> Service </a>
+            <a href="contact.html" title="Page contact"> Contact </a>
+        </nav>
+    </header>
+
+    <!-- Formulaire -->
+    <div>
+        <h1> Contacté & &copy; </h1>
+
+        <form action="" method="POST" enctype="multipart/form-data">
+            <div>
+                <label for="datetime"> Date et heure </label>
+                <input id="datetime" type="datetime-local" value="" />
+            </div>
+            <hr />
+
+            <div>
+                <label for="password"> Password </label>
+                <input id="password" required type="password" name="password" />
+            </div>
+            <hr />
+
+            <div>
+                <label for="color"> Color </label>
+                <input id="color" type="color" value="#ff0000" name="color_background" />
+            </div>
+            <hr />
+
+            <div>
+                <label for="nom"> Nom </label>
+                <input id="nom" disabled type="text" placeholder="Votre nom" value="" name="nom" />
+            </div>
+            <hr />
+
+            <div>
+                <label for="text"> Prénom </label>
+                <input id="text" readonly type="text" placeholder="Votre prénom" value="jonathan" name="prenom" />
+            </div>
+            <hr />
+
+            <div>
+                <label for="photo"> Avatar </label>
+                <input id="photo" required type="file" placeholder="Votre avatar" name="photo" />
+            </div>
+            <hr />
+
+            <div>
+                <label for="range"> Poids </label>
+                <input id="range" required type="range" name="poids" min="1" max="5" value="1" step="1" />
+            </div>
+            <hr />
+
+            <div class="section__p">
+                <p>lorem 1</p>
+                <p>lorem 2</p>
+                <p>lorem 3</p>
+                <p>lorem 4</p>
+                <p>lorem 5</p>
+            </div>
+
+            <div>
+                <label for="animal"> Animal : </label>
+                <select name="animal">
+                    <option selected> Selectionnez un choix : </option>
+                    <option value="dog"> Dog </option>
+                    <option value="cat"> cat </option>
+                    <option value="parrot"> parrot </option>
+                </select>
+            </div>
+            <hr />
+
+            <div>
+                <label for="homme"> Homme </label>
+                <input id="homme" type="radio" name="sexe" value="homme" />
+
+                <label for="femme"> Femme </label>
+                <input id="femme" type="radio" name="sexe" value="femme" />
+            </div>
+            <hr />
+
+            <div>
+                <label for="java"> JAVA </label>
+                <input id="java" type="checkbox" name="langage" value="java" /><br>
+
+                <label for="python"> PYTHON </label>
+                <input id="python" type="checkbox" name="langage" value="pyhton" /><br>
+
+                <label for="php"> PHP </label>
+                <input id="php" type="checkbox" name="langage" value="php" />
+            </div>
+
+            <div>
+                <label for="description"> Description </label>
+                <textarea maxlength="150" id="description" rows="5" cols="20" placeholder="Description"></textarea>
+            </div>
+
+            <div>
+                <input type="hidden" name="id" value="15" />
+                <input type="hidden" name="email" value="john@gmail.com" />
+                <input type="hidden" name="username" value="john" />
+            </div>
+            <hr />
+
+            <div>
+                <button type="reset" name="annuler"> Annuler </button>
+                <button type="submit" name="envoyer"> Envoyer </button>
+            </div>
+        </form>
+
+    </div> <br><br>
+
+    <footer style="width: 100%; height: 100px; background-color: #343434;">
+    </footer>
+
+</body>
+
+</html>
